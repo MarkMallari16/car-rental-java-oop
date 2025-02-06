@@ -52,8 +52,8 @@ public class Car {
     public String toString() {
         return "Car{"
                 + "Model='" + model + '\''
-                + ", Brand='" + brand + '\''
-                + ", Year=" + year
+                + ", Brand = '" + brand + '\''
+                + ", Year= " + year
                 + ", Rental Price Per Day=" + rentalPricePerDay
                 + ", Available=" + (isAvailable ? "Yes" : "No")
                 + '}';

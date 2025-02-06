@@ -15,13 +15,13 @@ public class CarRentalOOP {
 
         Customer customer1 = new Customer("Mark Mallari","A12345");
         Customer customer2 = new Customer("Joseph Cruz","B67890");
-        
+            
         rentalService.displayAvailableCars();
         
         rentalService.rentCar(customer1, "Civic");
-        
-        rentalService.displayAvailableCars();
-        rentalService.rentCar(customer2, "Civic");
+     
+
+    
     }
 
 }

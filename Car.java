@@ -6,7 +6,7 @@ public class Car {
     private String brand;
     private int year;
     private double rentalPricePerDay;
-    private boolean isAvailable;
+    public boolean isAvailable;
 
     public Car(String model, String brand, int year, double rentalPricePerDay) {
         this.model = model;
@@ -42,6 +42,21 @@ public class Car {
 
     public double getRentalPricePerDay() {
         return rentalPricePerDay;
+    }
+
+    public void setAvailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{"
+                + "Model='" + model + '\''
+                + ", Brand='" + brand + '\''
+                + ", Year=" + year
+                + ", Rental Price Per Day=" + rentalPricePerDay
+                + ", Available=" + (isAvailable ? "Yes" : "No")
+                + '}';
     }
 
 }

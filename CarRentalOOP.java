@@ -13,15 +13,19 @@ public class CarRentalOOP {
         rentalService.addCar(car2);
         rentalService.addCar(car3);
 
-        Customer customer1 = new Customer("Mark Mallari","A12345");
-        Customer customer2 = new Customer("Joseph Cruz","B67890");
-            
+        Customer customer1 = new Customer("Mark Mallari", "A12345");
+        Customer customer2 = new Customer("Joseph Cruz", "B67890");
+        Customer customer3 = new Customer("Joey De Leon", "B12345");
+
+        rentalService.displayAvailableCars();
+
+        rentalService.rentCar(customer1, "Civic");
+        rentalService.rentCar(customer2, "Corolla");
+        rentalService.rentCar(customer3, "Model 3");
+        
         rentalService.displayAvailableCars();
         
-        rentalService.rentCar(customer1, "Civic");
-     
 
-    
     }
 
 }

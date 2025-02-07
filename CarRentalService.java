@@ -24,6 +24,7 @@ public class CarRentalService {
                 return true;
             }
         }
+        
         System.out.println("Sorry not available for rent.");
 
         return false;

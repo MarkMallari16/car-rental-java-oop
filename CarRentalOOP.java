@@ -26,7 +26,7 @@ public class CarRentalOOP {
                 int userOption = input.nextInt();
                 input.nextLine();
                 String customerId;
-                
+
                 switch (userOption) {
                     case 1:
                         System.out.print("Enter customer id: ");

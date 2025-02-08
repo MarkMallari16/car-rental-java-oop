@@ -38,10 +38,10 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{"
+        return "Customer("
                 + "Name='" + name + '\''
                 + ", License Number='" + licenseNumber + '\''
                 + ", Rented Car=" + (rentedCar != null ? rentedCar.getModel() : "None")
-                + '}';
+                + ')';
     }
 }

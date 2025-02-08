@@ -10,7 +10,7 @@ public class CarRentalService {
     public CarRentalService() {
         this.cars = new ArrayList<>();
     }
-
+  
     public void addCar(Car car) {
         cars.add(car);
     }
@@ -24,7 +24,7 @@ public class CarRentalService {
                 return true;
             }
         }
-        
+
         System.out.println("Sorry not available for rent.");
 
         return false;
@@ -32,11 +32,10 @@ public class CarRentalService {
 
     public void returnCar(Customer customer) {
         Car rentedCar = customer.getRentedCar();
-
         if (rentedCar != null) {
             rentedCar.setAvailable(true);
             customer.setRentedCar(null);
-            System.out.println(customer.getName() + " has returned the " + rentedCar.getModel());
+            System.out.println(customer.getName() + " has returned the model " + rentedCar.getModel());
         } else {
             System.out.println(customer.getName() + " has no car to return.");
         }

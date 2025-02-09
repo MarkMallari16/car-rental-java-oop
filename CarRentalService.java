@@ -10,7 +10,7 @@ public class CarRentalService {
     public CarRentalService() {
         this.cars = new ArrayList<>();
     }
-  
+
     public void addCar(Car car) {
         cars.add(car);
     }

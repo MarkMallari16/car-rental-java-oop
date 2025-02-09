@@ -50,13 +50,13 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car("
+        return "Car ["
                 + "Model='" + model + '\''
-                + ", Brand = '" + brand + '\''
-                + ", Year= " + year
-                + ", Rental Price Per Day=" + rentalPricePerDay
-                + ", Available=" + (isAvailable ? "Yes" : "No")
-                + ')';
+                + "Brand='" + brand + '\''
+                + "Year= " + year
+                + "Rental Price Per Day =" + rentalPricePerDay
+                + "Available=" + (isAvailable ? "Yes" : "No")
+                + ']';
     }
 
 }

@@ -56,7 +56,7 @@ public class CarRentalOOP {
 
             }
             while (true) {
-                System.out.println("====================== Welcome " + customer.getName() + " ======================");
+                System.out.println("====================== Welcome back," + customer.getName() + " ======================");
                 System.out.println("[1] Display Available Car");
                 System.out.println("[2] Rent Car");
                 System.out.println("[3] Return Car");

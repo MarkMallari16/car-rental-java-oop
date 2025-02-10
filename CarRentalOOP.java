@@ -12,6 +12,7 @@ public class CarRentalOOP {
         rentalService.addCar(new Car("Civic", "Honda", 2022, 50));
         rentalService.addCar(new Car("Model 3", "Tesla", 2023, 100));
         rentalService.addCar(new Car("Corolla", "Toyota", 2021, 45));
+        rentalService.addCar(new Car("L300", "Mitsubishi", 2019, 500));
         UserManager userManager = new UserManager();
 
         while (true) {
@@ -48,10 +49,8 @@ public class CarRentalOOP {
                         input.close();
                         System.exit(0);
                         break;
-
                     default:
                         System.out.println("Invalid input. Please try again");
-
                 }
 
             }

@@ -88,6 +88,7 @@ public class CarRentalOOP {
                     default:
                         System.out.println("Invalid input try again.");
                 }
+                
                 if (customer == null) {
                     break;
                 }

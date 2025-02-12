@@ -65,7 +65,8 @@ public class CarRentalOOP {
                 System.out.println("[1] Display Available Car");
                 System.out.println("[2] Rent Car");
                 System.out.println("[3] Return Car");
-                System.out.println("[4] Log out");
+                System.out.println("[4] Display Customers");
+                System.out.println("[5] Log out");
                 System.out.print("Option: ");
                 option = input.nextInt();
 
@@ -86,8 +87,10 @@ public class CarRentalOOP {
                         String modelReturn = input.nextLine();
 
                         rentalService.returnCar(customer);
-                        break;
                     case 4:
+                        userManager.displayCustomers();
+                        break;
+                    case 5:
                         customer = null;
                         System.out.println("Logging out....");
                         break;

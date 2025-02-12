@@ -4,6 +4,14 @@ import java.util.Scanner;
 
 public class CarRentalOOP {
 
+    public static void displayOptions() {
+        System.out.println("=== Car Rental System === ");
+        System.out.println("[1] Login");
+        System.out.println("[2] Signup");
+        System.out.println("[3] Exit");
+        System.out.print("Option: ");
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         CarRentalService rentalService = new CarRentalService();
@@ -19,13 +27,11 @@ public class CarRentalOOP {
             Customer customer = null;
 
             while (customer == null) {
-                System.out.println("=== Car Rental System === ");
-                System.out.println("[1] Login");
-                System.out.println("[2] Signup");
-                System.out.println("[3] Exit");
-                System.out.print("Option: ");
+                displayOptions();
                 int userOption = input.nextInt();
+
                 input.nextLine();
+
                 String customerId;
 
                 switch (userOption) {
@@ -88,7 +94,7 @@ public class CarRentalOOP {
                     default:
                         System.out.println("Invalid input try again.");
                 }
-                
+
                 if (customer == null) {
                     break;
                 }
